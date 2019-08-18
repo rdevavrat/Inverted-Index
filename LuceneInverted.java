@@ -18,7 +18,7 @@ import org.apache.lucene.index.*;
 import org.apache.lucene.search.DocIdSetIterator;
 
 public class LuceneInverted {
-	static String dir = ""; // Enyter the respective path
+	static String dir = ""; // Enter the respective path
 	static String index = "index";
 	static int comparisons_counter=0;
 	

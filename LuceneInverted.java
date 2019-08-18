@@ -24,11 +24,7 @@ public class LuceneInverted {
 	
 	public static LinkedList<Integer> intersectTaatAnd(LinkedList<Integer> a, LinkedList<Integer> b) {
 		LinkedList<Integer> answer = new LinkedList<>();
-		//comparisons_counter = 0;
 		int x=0,y=0;
-		//System.out.println(a);
-		//System.out.println(b);
-			
 		
 		while(x != a.size() && y != b.size()) {
 			int docA=a.get(x);
@@ -53,10 +49,8 @@ public class LuceneInverted {
 	
 	public static LinkedList<Integer> intersectTaatOr(LinkedList<Integer> a, LinkedList<Integer> b) {
 		LinkedList<Integer> answer = new LinkedList<>();
-		//comparisons_counter = 0;
 		int x=0,y=0;
-		//System.out.println(a);
-		//System.out.println(b);
+
 		while(x != a.size() && y != b.size()) {
 			int docA=a.get(x);
 			int docB=b.get(y);
@@ -235,15 +229,9 @@ public class LuceneInverted {
 				
 				//DaatAnd
 				
-				a.clear();
+				a.clear();	
 				
-				
-				
-				
-				
-				
-				
-			} // for loop end
+			} 
 			op.flush();
 		}catch (IOException e){
 			System.out.println("Incorrect input file");
@@ -256,6 +244,6 @@ public class LuceneInverted {
 				System.out.println("Failure.");
 			}
 		}
-	} // main
+	} 
 	
 }
